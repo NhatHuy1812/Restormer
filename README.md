@@ -32,3 +32,21 @@ Format:
     |-- DN
         same as SR
 ```
+
+### Train Model
+
+```
+python train.py --data_name SR --seed 1
+```
+
+### Test Model
+
+```
+python inference.py --data_name SR --model_file result/SR.pth
+```
+
+### Continue training with checkpoint
+
+```
+python train.py --data_name SR --checkpoint_file result/checkpoint.pth
+```
